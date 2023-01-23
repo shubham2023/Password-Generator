@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CountDown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--main box -->
+  <div id = "main">
+    
+    <!--password generator box -->
+    <div id = "box">
+      
+      <!--password display box -->
+      <div id = "pass-box" onclick="copy()">Testing</div>
+      
+      <!--input box-->
+      <div id = "input-box">
+        <!--row for length for password -->
+        <div class="row">
+          <div class="left">
+            Password Length
+          </div>
+          <div class="right">
+            <input type="number" name="" id="total-char" min="2" max="30" value="10">
+          </div>
+        </div>
+        
+        <!--upperCase Letter -->
+        <div class="row">
+          <label for="upper-case">
+            <div class="left">
+              Contains Uppercase
+            </div>
+          </label>
+          <div class="right">
+            <input type="checkbox" name="upper-case" id="upper-case" checked>
+          </div>
+        </div>
+        
+        <!--lowerCase letter -->
+        <div class="row">
+          <label for="lower-case">
+            <div class="left">
+              Contains Lowercase
+            </div>
+          </label>
+          <div class="right">
+            <input type="checkbox" name="lower-case" id="lower-case">
+          </div>
+        </div>
+        
+        <!--number 0 - 9 -->
+        <div class="row">
+          
+          <label for="numbers">
+            <div class="left">
+              Contains Number
+            </div>
+          </label>
+          
+          <div class="right">
+            <input type="checkbox" name="numbers" id="numbers">
+          </div>
+          
+        </div>
+        
+        <!--symbol character -->
+        <div class="row">
+          
+          <label for="symbol">
+            <div class="left">
+              Contains Symbol
+            </div>
+          </label>
+          
+          <div class="right">
+            <input type="checkbox" name="symbol" id="symbol">
+          </div>
+          
+        </div>
+        
+        <!--for button -->
+        <div class="row">
+          <input type="button" value="Generate" onclick="generateButton()" id = "button">
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
